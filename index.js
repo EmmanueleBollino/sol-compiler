@@ -4,7 +4,7 @@ import solc from 'solc';
 const app = express();
 //const port = 80;
 
-const server = require('http').createServer();
+//const server = require('http').createServer();
 const port = process.env.PORT || 80;
 
 app.use(express.json());
