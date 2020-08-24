@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/home.html'));
 });
 
-app.get('/compile', (req, res) => {
+app.post('/compile', (req, res) => {
   var input = req.body;
 
   var output = JSON.parse(solc.compile(JSON.stringify(input)));
